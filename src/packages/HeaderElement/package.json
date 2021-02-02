@@ -1,0 +1,7 @@
+{
+  "name": "@sonyprofessional/header-element",
+  "version": "1.0.0",
+  "main": "HeaderElement.js",
+  "author": "Damian Ryan <damian@damianryan.co.uk>",
+  "license": "MIT"
+}

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`classname and id is added to decorative element 1`] = `ReactWrapper {}`;
+
+exports[`classname and id is added to functional element 1`] = `ReactWrapper {}`;
+
+exports[`fallback takes over if value null 1`] = `ReactWrapper {}`;
+
+exports[`mounts without crashing 1`] = `ReactWrapper {}`;
+
+exports[`output is a decorational header 1 element 1`] = `ReactWrapper {}`;
+
+exports[`output is a functional header 1 element 1`] = `ReactWrapper {}`;

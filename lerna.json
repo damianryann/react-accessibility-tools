@@ -1,0 +1,18 @@
+{
+  "npmClient": "npm",
+  "version": "0.4.2",
+  "command": {
+    "publish": {
+      "access": "public",
+      "ignoreChanges": [
+        "*.md",
+        "*.txt",
+        "test/**",
+        "**/test/**"
+      ]
+    }
+  },
+  "packages": [
+    "src/packages/*"
+  ]
+}
