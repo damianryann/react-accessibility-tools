@@ -1,12 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+export const headerOptions = ["h1", "h2", "h3", "h4", "h5", "h6", "p"];
 function HeaderElement(props) {
   const { title, isFunctional, value, fallBack, className, id, style } = props;
 
-  const headerOptions = ["h1", "h2", "h3", "h4", "h5", "h6", "p"];
-
-  if (headerOptions.indexOf(value || fallBack) === -1) {
+  if (
+    !headerOptions.includes(String(value).toLowerCase()) &&
+    !headerOptions.includes(String(fallBack).toLowerCase())
+  ) {
     console.error(
       "Error: value or fallBack must contain the correct header value. Please refer to documentation."
     );
@@ -72,8 +74,8 @@ function HeaderElement(props) {
 HeaderElement.propTypes = {
   title: PropTypes.string,
   isFunctional: PropTypes.bool,
-  value: PropTypes.string,
-  fallBack: PropTypes.string,
+  value: PropTypes.oneOf(headerOptions),
+  fallBack: PropTypes.oneOf(headerOptions),
   className: PropTypes.string,
   id: PropTypes.string,
   style: PropTypes.string,
