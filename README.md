@@ -24,7 +24,7 @@ The end user is responsible for necessary polyfills or bundler/loader dependenci
 
 ```js
 import React from "react";
-import HeaderElement from "react-header-element";
+import HeaderElement from "@sonyprofessional/accessibility";
 
 const ComponentName = () => {
   return (
