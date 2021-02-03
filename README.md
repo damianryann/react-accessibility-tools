@@ -6,7 +6,6 @@ This project's github pages and local demo were bootstrapped with [Create React 
 
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) ![Unit Tests](https://github.com/PenguinOfWar/bagofholding/workflows/Unit%20Tests/badge.svg) ![GitHub Pages](https://github.com/PenguinOfWar/bagofholding/workflows/GitHub%20Pages/badge.
 
-
 ## Security
 
 This monorepo manages multiple individual micro packages using Lerna. These micro packages are designed to be simple enough to fit on one screen of code. No compilation or mutation is provided to the source code before the package is deployed so what you see is what you get.
@@ -46,6 +45,18 @@ const ComponentName = () => {
 
 export default ComponentName;
 ```
+
+## Available Props
+
+| Name           | Type      | Description                                                                       |
+| -------------- | --------- | --------------------------------------------------------------------------------- |
+| `isFunctional` | `Boolean` | **Required.** Is the element a header or a div class.                             |
+| `value`        | `String`  | **Required.** What header is it? h1 - h6 / p.                                     |
+| `fallBack`     | `String`  | **Required.** The header you wish to fall back on should no value exist (h1 - h6) |
+| `title`        | `String`  | **Required.** The title of your header.                                           |
+| `className`    | `String`  | Add additional classes for styling.                                               |
+| `id`           | `String`  | Add an ID for behaviours such as anchors.                                         |
+| `style`        | `String`  | Use inline styling should you need to dynamically add CSS.                        |
 
 ## Support
 

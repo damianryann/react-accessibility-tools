@@ -17,7 +17,7 @@ const App = () => {
                 </h1>
               </div>
             </div>
-            <p className="lead">Get your access ability on!</p>
+            <p className="lead">Get your access-ability on!</p>
             <hr className="my-4" />
             <ul className="list-inline">
               <li className="list-inline-item">
