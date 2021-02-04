@@ -2,7 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 
 export const headerOptions = ["h1", "h2", "h3", "h4", "h5", "h6", "p"];
-function HeaderElement(props) {
+
+const HeaderElement = (props) => {
   const { title, isFunctional, value, fallBack, className, id, style } = props;
 
   if (
@@ -69,7 +70,7 @@ function HeaderElement(props) {
   );
 
   return headerElementMarkup;
-}
+};
 
 HeaderElement.propTypes = {
   title: PropTypes.string,

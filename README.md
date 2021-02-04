@@ -1,7 +1,5 @@
 # Sony Professional Accessibility Tools
 
-A magical grab bag of useful tools for the discerning developer.
-
 This project's github pages and local demo were bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) ![Unit Tests](https://github.com/PenguinOfWar/bagofholding/workflows/Unit%20Tests/badge.svg)
@@ -44,6 +42,33 @@ const ComponentName = () => {
 };
 
 export default ComponentName;
+```
+
+```js
+import React from "react";
+import HeaderElement from "@sonyprofessional/accessibility";
+
+const StandardText = (props) => {
+  const { data = {} } = props;
+  const { isFuncitonal, title, titleHeader, fallBack } = data;
+
+  return (
+    <div className="container">
+      <div className="row">
+        <div className="col-md-12">
+          <HeaderElement
+            isFunctional={isFuncitonal}
+            title={title}
+            value={titleHeader}
+            fallBack={fallBack}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default StandardText;
 ```
 
 ## Available Props
