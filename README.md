@@ -20,9 +20,11 @@ The end user is responsible for necessary polyfills or bundler/loader dependenci
 
 ## Demos & Examples
 
+### HeaderElement
+
 ```js
 import React from "react";
-import HeaderElement from "@sonyprofessional/accessibility";
+import HeaderElement from "@sonyprofessional/header-element";
 
 const ComponentName = () => {
   return (
@@ -46,7 +48,7 @@ export default ComponentName;
 
 ```js
 import React from "react";
-import HeaderElement from "@sonyprofessional/accessibility";
+import HeaderElement from "@sonyprofessional/header-element";
 
 const StandardText = (props) => {
   const { data = {} } = props;
@@ -71,9 +73,11 @@ const StandardText = (props) => {
 export default StandardText;
 ```
 
+### ImageElement
+
 ```js
 import React from "react";
-import HeaderElement from "@sonyprofessional/accessibility";
+import ImageElement from "@sonyprofessional/image-element";
 
 const MediaText = (props) => {
   const { data = {} } = props;
