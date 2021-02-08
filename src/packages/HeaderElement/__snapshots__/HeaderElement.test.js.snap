@@ -11,3 +11,5 @@ exports[`mounts without crashing 1`] = `ReactWrapper {}`;
 exports[`output is a decorational header 1 element 1`] = `ReactWrapper {}`;
 
 exports[`output is a functional header 1 element 1`] = `ReactWrapper {}`;
+
+exports[`style can be added to div 1`] = `ReactWrapper {}`;

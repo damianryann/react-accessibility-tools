@@ -1,6 +1,7 @@
 import React from "react";
 
 import HeaderElementComponent from "../../components/HeaderElementComponent";
+import ImageElementComponent from "../../components/ImageElementComponent";
 
 import "./App.scss";
 
@@ -48,6 +49,9 @@ const App = () => {
       </div>
       <div className="row">
         <HeaderElementComponent />
+      </div>
+      <div className="row">
+        <ImageElementComponent />
       </div>
     </div>
   );

@@ -71,6 +71,34 @@ const StandardText = (props) => {
 export default StandardText;
 ```
 
+```js
+import React from "react";
+import HeaderElement from "@sonyprofessional/accessibility";
+
+const MediaText = (props) => {
+  const { data = {} } = props;
+  const { ariaTrue, thumbnail, logicalName, altText } = data;
+
+  return (
+    <div className="container">
+      <div className="row">
+        <div className="col-md-12">
+          <ImageElement
+            src={thumbnail}
+            alt={altText} //if empty, output will display role="presentation"
+            id={`${logicalName}-thumbnail`}
+            className="img-thumbnail"
+            hideFromReader={ariaTrue} //only true if altText exists and bool toggled.
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default MediaText;
+```
+
 ## Available Props
 
 | Name           | Type      | Description                                                                       |
