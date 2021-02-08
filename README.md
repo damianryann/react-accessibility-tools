@@ -92,7 +92,7 @@ Available Props:
 | Name             | Type      | Description                                                |
 | ---------------- | --------- | ---------------------------------------------------------- |
 | `hideFromReader` | `Boolean` | Is the image alt text decoration but needed for SEO?       |
-| `src`            | `String`  | Image source                                               |
+| `src`            | `String`  | **Required.** Image source                                 |
 | `alt`            | `String`  | Alt text for image                                         |
 | `className`      | `String`  | Add additional classes for styling.                        |
 | `id`             | `String`  | Add an ID for behaviours such as anchors.                  |
