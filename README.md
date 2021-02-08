@@ -2,7 +2,7 @@
 
 This project's github pages and local demo were bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) ![Unit Tests](https://github.com/PenguinOfWar/bagofholding/workflows/Unit%20Tests/badge.svg)
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) ![Unit Tests](https://github.com/PenguinOfWar/bagofholding/workflows/Unit%20Tests/badge.svg) ![meerkat](https://badgen.net/badge/meerkat-legacy/pending/grey?icon=libraries) ![meerkat](https://badgen.net/badge/meerkat-ii/confirmed/green?icon=libraries)
 
 ## Security
 
