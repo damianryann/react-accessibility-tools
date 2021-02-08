@@ -22,6 +22,18 @@ The end user is responsible for necessary polyfills or bundler/loader dependenci
 
 ### HeaderElement
 
+Available Props:
+
+| Name           | Type      | Description                                                                       |
+| -------------- | --------- | --------------------------------------------------------------------------------- |
+| `isFunctional` | `Boolean` | **Required.** Is the element a header or a div class.                             |
+| `value`        | `String`  | **Required.** What header is it? h1 - h6 / p.                                     |
+| `fallBack`     | `String`  | **Required.** The header you wish to fall back on should no value exist (h1 - h6) |
+| `title`        | `String`  | **Required.** The title of your header.                                           |
+| `className`    | `String`  | Add additional classes for styling.                                               |
+| `id`           | `String`  | Add an ID for behaviours such as anchors.                                         |
+| `style`        | `Object`  | Use inline styling should you need to dynamically add CSS.                        |
+
 ```js
 import React from "react";
 import HeaderElement from "@sonyprofessional/header-element";
@@ -75,6 +87,17 @@ export default StandardText;
 
 ### ImageElement
 
+Available Props:
+
+| Name             | Type      | Description                                                |
+| ---------------- | --------- | ---------------------------------------------------------- |
+| `hideFromReader` | `Boolean` | Is the image alt text decoration but needed for SEO?       |
+| `src`            | `String`  | Image source                                               |
+| `alt`            | `String`  | Alt text for image                                         |
+| `className`      | `String`  | Add additional classes for styling.                        |
+| `id`             | `String`  | Add an ID for behaviours such as anchors.                  |
+| `style`          | `Object`  | Use inline styling should you need to dynamically add CSS. |
+
 ```js
 import React from "react";
 import ImageElement from "@sonyprofessional/image-element";
@@ -102,18 +125,6 @@ const MediaText = (props) => {
 
 export default MediaText;
 ```
-
-## Available Props
-
-| Name           | Type      | Description                                                                       |
-| -------------- | --------- | --------------------------------------------------------------------------------- |
-| `isFunctional` | `Boolean` | **Required.** Is the element a header or a div class.                             |
-| `value`        | `String`  | **Required.** What header is it? h1 - h6 / p.                                     |
-| `fallBack`     | `String`  | **Required.** The header you wish to fall back on should no value exist (h1 - h6) |
-| `title`        | `String`  | **Required.** The title of your header.                                           |
-| `className`    | `String`  | Add additional classes for styling.                                               |
-| `id`           | `String`  | Add an ID for behaviours such as anchors.                                         |
-| `style`        | `String`  | Use inline styling should you need to dynamically add CSS.                        |
 
 ## Support
 
