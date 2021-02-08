@@ -22,7 +22,7 @@ The end user is responsible for necessary polyfills or bundler/loader dependenci
 
 ### HeaderElement
 
-Available Props:
+**Available Props:**
 
 | Name           | Type      | Description                                                                       |
 | -------------- | --------- | --------------------------------------------------------------------------------- |
@@ -87,7 +87,7 @@ export default StandardText;
 
 ### ImageElement
 
-Available Props:
+**Available Props:**
 
 | Name             | Type      | Description                                                |
 | ---------------- | --------- | ---------------------------------------------------------- |
