@@ -79,7 +79,7 @@ HeaderElement.propTypes = {
   fallBack: PropTypes.oneOf(headerOptions),
   className: PropTypes.string,
   id: PropTypes.string,
-  style: PropTypes.string,
+  style: PropTypes.object,
 };
 
 export default HeaderElement;

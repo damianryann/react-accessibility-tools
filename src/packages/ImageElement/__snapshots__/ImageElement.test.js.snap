@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`classname and id is added to image element 1`] = `ReactWrapper {}`;
+
+exports[`expect aria hidden to be true if alt text is for SEO only 1`] = `ReactWrapper {}`;
+
+exports[`expect no changes when alt text is present 1`] = `ReactWrapper {}`;
+
+exports[`expect role=presentation to be active when no alt text is provided 1`] = `ReactWrapper {}`;
+
+exports[`mounts without crashing 1`] = `ReactWrapper {}`;
+
+exports[`style can be added to image 1`] = `ReactWrapper {}`;

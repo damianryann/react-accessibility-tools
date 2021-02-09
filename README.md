@@ -2,7 +2,7 @@
 
 This project's github pages and local demo were bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) ![Unit Tests](https://github.com/PenguinOfWar/bagofholding/workflows/Unit%20Tests/badge.svg)
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) ![Unit Tests](https://github.com/PenguinOfWar/bagofholding/workflows/Unit%20Tests/badge.svg) ![meerkat](https://badgen.net/badge/meerkat-legacy/pending/grey?icon=libraries) ![meerkat](https://badgen.net/badge/meerkat-ii/pending/grey?icon=libraries)
 
 ## Security
 
@@ -20,9 +20,23 @@ The end user is responsible for necessary polyfills or bundler/loader dependenci
 
 ## Demos & Examples
 
+### HeaderElement
+
+**Available Props:**
+
+| Name           | Type      | Description                                                                       |
+| -------------- | --------- | --------------------------------------------------------------------------------- |
+| `isFunctional` | `Boolean` | **Required.** Is the element a header or a div class.                             |
+| `value`        | `String`  | **Required.** What header is it? h1 - h6 / p.                                     |
+| `fallBack`     | `String`  | **Required.** The header you wish to fall back on should no value exist (h1 - h6) |
+| `title`        | `String`  | **Required.** The title of your header.                                           |
+| `className`    | `String`  | Add additional classes for styling.                                               |
+| `id`           | `String`  | Add an ID for behaviours such as anchors.                                         |
+| `style`        | `Object`  | Use inline styling should you need to dynamically add CSS.                        |
+
 ```js
 import React from "react";
-import HeaderElement from "@sonyprofessional/accessibility";
+import HeaderElement from "@sonyprofessional/header-element";
 
 const ComponentName = () => {
   return (
@@ -46,7 +60,7 @@ export default ComponentName;
 
 ```js
 import React from "react";
-import HeaderElement from "@sonyprofessional/accessibility";
+import HeaderElement from "@sonyprofessional/header-element";
 
 const StandardText = (props) => {
   const { data = {} } = props;
@@ -71,17 +85,46 @@ const StandardText = (props) => {
 export default StandardText;
 ```
 
-## Available Props
+### ImageElement
 
-| Name           | Type      | Description                                                                       |
-| -------------- | --------- | --------------------------------------------------------------------------------- |
-| `isFunctional` | `Boolean` | **Required.** Is the element a header or a div class.                             |
-| `value`        | `String`  | **Required.** What header is it? h1 - h6 / p.                                     |
-| `fallBack`     | `String`  | **Required.** The header you wish to fall back on should no value exist (h1 - h6) |
-| `title`        | `String`  | **Required.** The title of your header.                                           |
-| `className`    | `String`  | Add additional classes for styling.                                               |
-| `id`           | `String`  | Add an ID for behaviours such as anchors.                                         |
-| `style`        | `String`  | Use inline styling should you need to dynamically add CSS.                        |
+**Available Props:**
+
+| Name             | Type      | Description                                                |
+| ---------------- | --------- | ---------------------------------------------------------- |
+| `hideFromReader` | `Boolean` | Is the image alt text decoration but needed for SEO?       |
+| `src`            | `String`  | **Required.** Image source                                 |
+| `alt`            | `String`  | Alt text for image                                         |
+| `className`      | `String`  | Add additional classes for styling.                        |
+| `id`             | `String`  | Add an ID for behaviours such as anchors.                  |
+| `style`          | `Object`  | Use inline styling should you need to dynamically add CSS. |
+
+```js
+import React from "react";
+import ImageElement from "@sonyprofessional/image-element";
+
+const MediaText = (props) => {
+  const { data = {} } = props;
+  const { ariaTrue, thumbnail, logicalName, altText } = data;
+
+  return (
+    <div className="container">
+      <div className="row">
+        <div className="col-md-12">
+          <ImageElement
+            src={thumbnail}
+            alt={altText} //if empty, output will display role="presentation"
+            id={`${logicalName}-thumbnail`}
+            className="img-thumbnail"
+            hideFromReader={ariaTrue} //only true if altText exists and bool toggled.
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default MediaText;
+```
 
 ## Support
 

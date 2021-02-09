@@ -83,3 +83,22 @@ it("classname and id is added to decorative element", () => {
 
   expect(component).toMatchSnapshot();
 });
+
+it("style can be added to div", () => {
+  const component = mount(
+    <HeaderElement
+      isFunctional={false}
+      value="h2"
+      fallBack="h1"
+      title="Hello World"
+      style={{ backgroundColor: "#ffffff" }}
+    />
+  );
+
+  expect(component.find("div")).toHaveLength(1);
+  expect(component.find(".h2").html()).toBe(
+    `<div class="h2" style="background-color: rgb(255, 255, 255);">Hello World</div>`
+  );
+
+  expect(component).toMatchSnapshot();
+});
