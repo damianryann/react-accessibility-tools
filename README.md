@@ -2,7 +2,7 @@
 
 This project's github pages and local demo were bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) ![Unit Tests](https://github.com/PenguinOfWar/bagofholding/workflows/Unit%20Tests/badge.svg) ![meerkat](https://badgen.net/badge/meerkat-legacy/pending/grey?icon=libraries) ![meerkat](https://badgen.net/badge/meerkat-ii/pending/grey?icon=libraries)
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) ![Unit Tests](https://github.com/PenguinOfWar/bagofholding/workflows/Unit%20Tests/badge.svg) ![meerkat](https://badgen.net/badge/meerkat-legacy/pending/grey) ![meerkat](https://badgen.net/badge/meerkat-ii/pending/grey)
 
 ## Security
 
@@ -128,7 +128,7 @@ export default MediaText;
 
 ## Support
 
-Please create an issue in the [issue tracker](https://github.com/sonyprofessional/accessibility/issues) if you have a problem or need support. Please select the correct label when creating your issue (e.g. `help wanted` or `bug`).
+Please create an issue in the [issue tracker](https://github.com/siscpl-gisc-in/accessibility/issues) if you have a problem or need support. Please select the correct label when creating your issue (e.g. `help wanted` or `bug`).
 
 ## Available Scripts
 

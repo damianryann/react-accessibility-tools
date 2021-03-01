@@ -24,7 +24,7 @@ const App = () => {
               <li className="list-inline-item">
                 <a
                   className="btn btn-dark btn-lg"
-                  href="https://github.com/sonyprofessional/accessibility"
+                  href="https://github.com/siscpl-gisc-in/accessibility"
                   target="_blank"
                   rel="noopener noreferrer"
                   role="button"
@@ -35,7 +35,7 @@ const App = () => {
               <li className="list-inline-item">
                 <a
                   className="btn btn-dark btn-lg"
-                  href="https://github.com/sonyprofessional/accessibility/issues"
+                  href="https://github.com/siscpl-gisc-in/accessibility/issues"
                   target="_blank"
                   rel="noopener noreferrer"
                   role="button"
