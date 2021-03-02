@@ -81,15 +81,15 @@
     "sass-lint": "^1.13.1",
     "typescript": "^3.9.6"
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "description": "A plug-in frontend accessibility tool designed for ReactJS applications.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sonyprofessional/accessibility.git"
+    "url": "git+https://github.com/siscpl-gisc-in/accessibility.git"
   },
   "keywords": [],
   "author": "Darryl Walker <darryljwalker@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sonyprofessional/accessibility/issues"
+    "url": "https://github.com/siscpl-gisc-in/accessibility/issues"
   }
 }
