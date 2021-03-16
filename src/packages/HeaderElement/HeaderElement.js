@@ -21,10 +21,10 @@ const HeaderElement = (props) => {
     );
   }
 
-  const HeaderElement = value ? value : fallBack;
+  const Header = value ? value : fallBack;
 
   function addClassToDiv() {
-    let classes = [HeaderElement];
+    let classes = [Header];
 
     if (className) {
       classes.push(className);
@@ -35,34 +35,30 @@ const HeaderElement = (props) => {
 
   function addClassToTag() {
     let tagClasses = (document.getElementsByTagName(
-      HeaderElement
+      Header
     ).className = className);
 
     return tagClasses;
   }
 
   function addId() {
-    let tagIdToTag = (document.getElementsByTagName(HeaderElement).id = id);
-    let tagIdToClass = (document.getElementsByClassName(HeaderElement).id = id);
+    let tagIdToTag = (document.getElementsByTagName(Header).id = id);
+    let tagIdToClass = (document.getElementsByClassName(Header).id = id);
 
     return tagIdToTag || tagIdToClass;
   }
 
   function addStyle() {
-    let tagIdToTag = (document.getElementsByTagName(
-      HeaderElement
-    ).style = style);
-    let tagIdToClass = (document.getElementsByClassName(
-      HeaderElement
-    ).style = style);
+    let tagIdToTag = (document.getElementsByTagName(Header).style = style);
+    let tagIdToClass = (document.getElementsByClassName(Header).style = style);
 
     return tagIdToTag || tagIdToClass;
   }
 
   const headerElementMarkup = isFunctional ? (
-    <HeaderElement className={addClassToTag()} id={addId()} style={addStyle()}>
+    <Header className={addClassToTag()} id={addId()} style={addStyle()}>
       {title}
-    </HeaderElement>
+    </Header>
   ) : (
     <div className={addClassToDiv()} id={addId()} style={addStyle()}>
       {title}
