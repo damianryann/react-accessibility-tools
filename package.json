@@ -87,7 +87,8 @@
     "url": "git+https://github.com/siscpl-gisc-in/accessibility.git"
   },
   "keywords": [],
-  "author": "Darryl Walker <darryljwalker@gmail.com>",
+  "author": "Damian Ryan <damian@damianryan.co.uk>",
+  "contributor": "Darryl Walker <darryljwalker@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/siscpl-gisc-in/accessibility/issues"
