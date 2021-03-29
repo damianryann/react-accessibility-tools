@@ -9,9 +9,7 @@ const HeaderElementComponent = () => {
         <div className="col-12">
           <div className="card bg-secondary text-white text-center">
             <div className="card-body">
-              <h2 className="card-title display-4 pb-5">
-                @sonyprofessional/HeaderElement
-              </h2>
+              <h2 className="card-title display-4 pb-5">HeaderElement</h2>
               <div className="row">
                 <div className="col-md-6 pb-3">
                   <HeaderElement

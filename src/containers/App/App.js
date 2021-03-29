@@ -14,7 +14,7 @@ const App = () => {
             <div className="row">
               <div className="col-lg-12">
                 <h1 className="display-3 text-center">
-                  Sony Professional Accessibility Tools
+                  React Accessibility Tools
                 </h1>
               </div>
             </div>
@@ -24,7 +24,7 @@ const App = () => {
               <li className="list-inline-item">
                 <a
                   className="btn btn-dark btn-lg"
-                  href="https://github.com/siscpl-gisc-in/accessibility"
+                  href="https://github.com/damianryann/react-accessibility-tools"
                   target="_blank"
                   rel="noopener noreferrer"
                   role="button"
@@ -35,7 +35,7 @@ const App = () => {
               <li className="list-inline-item">
                 <a
                   className="btn btn-dark btn-lg"
-                  href="https://github.com/siscpl-gisc-in/accessibility/issues"
+                  href="https://github.com/damianryann/react-accessibility-tools/issues"
                   target="_blank"
                   rel="noopener noreferrer"
                   role="button"

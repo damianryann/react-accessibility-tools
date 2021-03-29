@@ -1,5 +1,5 @@
 {
-  "name": "@sonyprofessional/accessibility",
+  "name": "react-accessibility-tools",
   "version": "1.0.1",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -84,13 +84,13 @@
   "description": "A plug-in frontend accessibility tool designed for ReactJS applications.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/siscpl-gisc-in/accessibility.git"
+    "url": "git+https://github.com/damianryann/react-accessibility-tools.git"
   },
   "keywords": [],
   "author": "Damian Ryan <damian@damianryan.co.uk>",
   "contributor": "Darryl Walker <darryljwalker@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/siscpl-gisc-in/accessibility/issues"
+    "url": "https://github.com/damianryann/react-accessibility-tools/issues"
   }
 }

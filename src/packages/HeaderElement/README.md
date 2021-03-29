@@ -14,7 +14,7 @@
 
 ```js
 import React from "react";
-import HeaderElement from "@sonyprofessional/header-element";
+import HeaderElement from "react-accessibility-tools";
 
 const ComponentName = () => {
   return (
@@ -38,7 +38,7 @@ export default ComponentName;
 
 ```js
 import React from "react";
-import HeaderElement from "@sonyprofessional/header-element";
+import HeaderElement from "react-accessibility-tools";
 
 const StandardText = (props) => {
   const { data = {} } = props;

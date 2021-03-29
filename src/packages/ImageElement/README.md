@@ -13,7 +13,7 @@
 
 ```js
 import React from "react";
-import ImageElement from "@sonyprofessional/image-element";
+import ImageElement from "react-accessibility-tools";
 
 const MediaText = (props) => {
   const { data = {} } = props;
