@@ -10,7 +10,7 @@
 | `title`        | `String`  | **Required.** The title of your header.                                           |
 | `className`    | `String`  | Add additional classes for styling.                                               |
 | `id`           | `String`  | Add an ID for behaviours such as anchors.                                         |
-| `style`        | `Object`  | Use inline styling should you need to dynamically add CSS.                        |
+| `style`        | `CSSProperties`  | Use inline styling should you need to dynamically add CSS.                        |
 
 ```js
 import React from "react";
