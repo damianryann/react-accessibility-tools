@@ -23,18 +23,19 @@ const HeaderElement: VoidFunctionComponent<HeaderProps> = ({
   }
 
   const divClassHanlder = () => {
-    let classes = [];
-    const removeExtraSpaces = /  +/g;
-
-    classes.push(
+    let classes = [
       value.toLowerCase() ?? undefined,
       !value ? fallBack?.toLowerCase() : undefined,
       className ?? undefined
-    );
+    ].join(' ');
 
-    classes.toString().replaceAll(',', '');
+    const removeExtraSpaces = / +/g;
 
-    return classes.join(' ').replaceAll(removeExtraSpaces, ' ');
+    if (!className) {
+      return classes.toString().replaceAll(removeExtraSpaces, '');
+    } else {
+      return classes.toString().replaceAll(removeExtraSpaces, ' ');
+    }
   };
 
   const Header = (
