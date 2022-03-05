@@ -1,8 +1,8 @@
-import React, { ElementType, VoidFunctionComponent } from "react";
+import React, { ElementType, VoidFunctionComponent } from 'react';
 
-import { HeaderProps } from "./HeaderElement.types";
+import { HeaderProps } from './HeaderElement.types';
 
-export const headerOptions = ["h1", "h2", "h3", "h4", "h5", "h6", "p"];
+export const headerOptions = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p'];
 
 const HeaderElement: VoidFunctionComponent<HeaderProps> = ({
   title,
@@ -11,14 +11,14 @@ const HeaderElement: VoidFunctionComponent<HeaderProps> = ({
   fallBack,
   className,
   id,
-  style,
+  style
 }) => {
   if (
     !headerOptions.includes(String(value).toLowerCase()) &&
     !headerOptions.includes(String(fallBack).toLowerCase())
   ) {
     console.error(
-      "Possible Error: value or fallBack must contain the correct header value. Please refer to documentation."
+      'Possible Error: value or fallBack must contain the correct header value. Please refer to documentation.'
     );
   }
 
@@ -32,9 +32,9 @@ const HeaderElement: VoidFunctionComponent<HeaderProps> = ({
       className ?? undefined
     );
 
-    classes.toString().replaceAll(",", "");
+    classes.toString().replaceAll(',', '');
 
-    return classes.join(" ").toString().replaceAll(removeExtraSpaces, " ");
+    return classes.join(' ').replaceAll(removeExtraSpaces, ' ');
   };
 
   const Header = (

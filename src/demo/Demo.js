@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import "./Demo.css";
-import HeaderElement from "../packages/HeaderElement/HeaderElement";
+import './Demo.css';
+import HeaderElement from '../packages/HeaderElement/HeaderElement';
 
 function Demo() {
   return (
@@ -9,14 +9,23 @@ function Demo() {
       <header className="App-header">
         <div className="container">
           <div className="row">
-            <div className="col">This is a demo</div>
-            <HeaderElement
-              title="Hello world"
-              className="some-class"
-              isFunctional={false}
-              value="h1"
-              style={{ color: "red" }}
-            />
+            <div className="col">
+              <HeaderElement
+                title="Hello world"
+                className="some-class another-class"
+                isFunctional={true}
+                value="h2"
+                style={{ color: 'red' }}
+              />
+            </div>
+            <div className="col">
+              <HeaderElement
+                title="Hello world"
+                id="decorative-h1"
+                isFunctional={false}
+                value="h1"
+              />
+            </div>
           </div>
         </div>
       </header>
