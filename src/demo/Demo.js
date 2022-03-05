@@ -21,6 +21,7 @@ function Demo() {
             <div className="col">
               <HeaderElement
                 title="Hello world"
+                className="some-class"
                 id="decorative-h1"
                 isFunctional={false}
                 value="h1"
