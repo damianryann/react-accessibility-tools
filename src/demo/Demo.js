@@ -14,7 +14,7 @@ function Demo() {
               title="Hello world"
               className="some-class"
               isFunctional={false}
-              value="H1"
+              value="h1"
               style={{ color: "red" }}
             />
           </div>

@@ -17,9 +17,7 @@
     "lerna:list": "lerna list",
     "lerna:bootstrap": "lerna bootstrap",
     "lerna:publish": "lerna publish",
-    "lerna:publish:force": "lerna publish from-package",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "lerna:publish:force": "lerna publish from-package"
   },
   "eslintConfig": {
     "extends": [
