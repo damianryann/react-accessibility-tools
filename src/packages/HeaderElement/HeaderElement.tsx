@@ -1,10 +1,10 @@
-import React, { ElementType, VoidFunctionComponent } from 'react';
+import React, { ElementType, FunctionComponent } from 'react';
 
 import { HeaderProps } from './HeaderElement.types';
 
 export const headerOptions = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p'];
 
-const HeaderElement: VoidFunctionComponent<HeaderProps> = ({
+const HeaderElement: FunctionComponent<HeaderProps> = ({
   title,
   isFunctional,
   value,
@@ -17,9 +17,10 @@ const HeaderElement: VoidFunctionComponent<HeaderProps> = ({
     !headerOptions.includes(String(value).toLowerCase()) &&
     !headerOptions.includes(String(fallBack).toLowerCase())
   ) {
-    console.error(
-      'Possible Error: value or fallBack must contain the correct header value. Please refer to documentation.'
-    );
+    const errMessage =
+      'Error 001: value or fallBack must contain the correct header value. Please refer to documentation.';
+    console.error(errMessage);
+    return <code>{errMessage}</code>;
   }
 
   const divClassHanlder = () => {
