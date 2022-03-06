@@ -23,14 +23,14 @@ const HeaderElement: FunctionComponent<HeaderProps> = ({
     return <code>{errMessage}</code>;
   }
 
-  const divClassHanlder = () => {
+  const divClassHanlder: Function = () => {
     let classes = [
       value.toLowerCase() ?? undefined,
       !value ? fallBack?.toLowerCase() : undefined,
       className ?? undefined
     ].join(' ');
 
-    const removeExtraSpaces = / +/g;
+    const removeExtraSpaces: RegExp = / +/g;
 
     if (!className) {
       return classes.toString().replaceAll(removeExtraSpaces, '');
