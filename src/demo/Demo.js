@@ -11,21 +11,23 @@ function Demo() {
           <div className="row">
             <div className="col">
               <HeaderElement
-                title="Hello world"
                 className="some-class another-class"
                 isFunctional={true}
-                value="h2"
+                heading="h2"
                 style={{ color: 'red' }}
-              />
+              >
+                Functional Heading
+              </HeaderElement>
             </div>
             <div className="col">
               <HeaderElement
-                title="Hello world"
                 className="some-class"
                 id="decorative-h1"
                 isFunctional={false}
-                value="h1"
-              />
+                heading="h1"
+              >
+                Decorative Heading
+              </HeaderElement>
             </div>
           </div>
         </div>

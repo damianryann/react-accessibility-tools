@@ -5,28 +5,28 @@ import { HeaderProps } from './HeaderElement.types';
 export const headerOptions = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p'];
 
 const HeaderElement: FunctionComponent<HeaderProps> = ({
-  title,
+  children,
   isFunctional,
-  value,
+  heading,
   fallBack,
   className,
   id,
   style
 }) => {
   if (
-    !headerOptions.includes(String(value).toLowerCase()) &&
+    !headerOptions.includes(String(heading).toLowerCase()) &&
     !headerOptions.includes(String(fallBack).toLowerCase())
   ) {
     const errMessage =
-      'Error 001: value or fallBack must contain the correct header value. Please refer to documentation.';
+      'React Accessibility Tools Error: heading or fallBack must contain the correct header value. Please refer to documentation.';
     console.error(errMessage);
     return <code>{errMessage}</code>;
   }
 
   const divClassHanlder: Function = () => {
     let classes = [
-      value.toLowerCase() ?? undefined,
-      !value ? fallBack?.toLowerCase() : undefined,
+      heading.toLowerCase() ?? undefined,
+      !heading ? fallBack?.toLowerCase() : undefined,
       className ?? undefined
     ].join(' ');
 
@@ -40,7 +40,7 @@ const HeaderElement: FunctionComponent<HeaderProps> = ({
   };
 
   const Header = (
-    value ? value.toLowerCase() : fallBack?.toLowerCase()
+    heading ? heading.toLowerCase() : fallBack?.toLowerCase()
   ) as ElementType;
 
   const headerElementMarkup = isFunctional ? (
@@ -49,7 +49,7 @@ const HeaderElement: FunctionComponent<HeaderProps> = ({
       id={id ?? undefined}
       style={style ?? undefined}
     >
-      {title}
+      {children}
     </Header>
   ) : (
     <div
@@ -57,7 +57,7 @@ const HeaderElement: FunctionComponent<HeaderProps> = ({
       id={id ?? undefined}
       style={style ?? undefined}
     >
-      {title}
+      {children}
     </div>
   );
 

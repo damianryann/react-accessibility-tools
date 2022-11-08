@@ -1,3 +1,1 @@
-import HeaderElement from './HeaderElement/HeaderElement';
-
-export { HeaderElement };
+export { default as HeaderElement } from './HeaderElement/HeaderElement';

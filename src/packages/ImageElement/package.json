@@ -1,7 +1,7 @@
 {
   "name": "@damianryann/image-element",
   "version": "1.0.0",
-  "main": "ImageElement.js",
+  "main": "ImageElement.tsx",
   "author": "Damian Ryan <damian@damianryan.co.uk>",
   "license": "MIT"
 }

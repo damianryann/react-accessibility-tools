@@ -1,0 +1,5 @@
+// Entry point for main SASS file packaging and CSS output
+// Includes all component SASS that exists outside of index.scss
+// Along with any code necessary to tweak the output to be package suitable
+
+@import 'index.scss';
