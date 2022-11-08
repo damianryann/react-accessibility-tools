@@ -27,9 +27,9 @@ The end user is responsible for necessary polyfills or bundler/loader dependenci
 | Name           | Type      | Description                                                                       |
 | -------------- | --------- | --------------------------------------------------------------------------------- |
 | `isFunctional` | `Boolean` | **Required.** Is the element a header or a div class.                             |
-| `value`        | `String`  | **Required.** What header is it? h1 - h6 / p.                                     |
+| `heading`      | `String`  | **Required.** What header is it? h1 - h6 / p.                                     |
 | `fallBack`     | `String`  | **Required.** The header you wish to fall back on should no value exist (h1 - h6) |
-| `title`        | `String`  | **Required.** The title of your header.                                           |
+| `children`     | `String`  | **Required.** The title of your header.                                           |
 | `className`    | `String`  | Add additional classes for styling.                                               |
 | `id`           | `String`  | Add an ID for behaviours such as anchors.                                         |
 | `style`        | `Object`  | Use inline styling should you need to dynamically add CSS.                        |
@@ -45,10 +45,11 @@ const ComponentName = () => {
         <div className="col-md-12">
           <HeaderElement
             isFunctional={true}
-            title="Hello World"
-            value="h1"
+            header="h1"
             fallBack="h2"
-          />
+          >
+            Hello world
+          <HeaderElement/>
         </div>
       </div>
     </div>
@@ -62,9 +63,9 @@ export default ComponentName;
 import React from "react";
 import HeaderElement from "react-accessibility-tools";
 
-const StandardText = (props) => {
+const Text = (props) => {
   const { data = {} } = props;
-  const { isFuncitonal, title, titleHeader, fallBack } = data;
+  const { isFuncitonal, title, titleHeader, fallBack, id } = data;
 
   return (
     <div className="container">
@@ -72,17 +73,19 @@ const StandardText = (props) => {
         <div className="col-md-12">
           <HeaderElement
             isFunctional={isFuncitonal}
-            title={title}
-            value={titleHeader}
+            header={titleHeader} // h1 - h6 / p
+            id={id}
             fallBack={fallBack}
-          />
+          >
+            {title}
+          <HeaderElement/>
         </div>
       </div>
     </div>
   );
 };
 
-export default StandardText;
+export default Text;
 ```
 
 ### ImageElement
@@ -91,7 +94,6 @@ export default StandardText;
 
 | Name             | Type      | Description                                                |
 | ---------------- | --------- | ---------------------------------------------------------- |
-| `hideFromReader` | `Boolean` | Is the image alt text decoration but needed for SEO?       |
 | `src`            | `String`  | **Required.** Image source                                 |
 | `alt`            | `String`  | Alt text for image                                         |
 | `className`      | `String`  | Add additional classes for styling.                        |
@@ -102,9 +104,9 @@ export default StandardText;
 import React from "react";
 import ImageElement from "react-accessibility-tools";
 
-const MediaText = (props) => {
+const Media = (props) => {
   const { data = {} } = props;
-  const { ariaTrue, thumbnail, logicalName, altText } = data;
+  const { thumbnail, id, altText } = data;
 
   return (
     <div className="container">
@@ -113,9 +115,8 @@ const MediaText = (props) => {
           <ImageElement
             src={thumbnail}
             alt={altText} //if empty, output will display role="presentation"
-            id={`${logicalName}-thumbnail`}
+            id={`${id}-thumbnail`}
             className="img-thumbnail"
-            hideFromReader={ariaTrue} //only true if altText exists and bool toggled.
           />
         </div>
       </div>
@@ -123,7 +124,7 @@ const MediaText = (props) => {
   );
 };
 
-export default MediaText;
+export default Media;
 ```
 
 ## Support
