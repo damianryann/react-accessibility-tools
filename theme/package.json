@@ -1,0 +1,10 @@
+{
+  "name": "digital-factory-design-system-theme",
+  "version": "0.0.1",
+  "description": "Jacobs Digital Factory Design System Theme as CSS",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Darryl Walker <Darryl.Walker@jacobs.com>",
+  "license": "UNLICENSED"
+}
